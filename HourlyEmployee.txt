@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week6;
+
+/**
+ *
+ * @author Harini.Raj
+ */
+public class HourlyEmployee extends Employee
+{
+    private float HourlyWageRate;
+    private int NumberOfHours;
+    
+    public HourlyEmployee( String first, String last, int SIN, float HourlyWage, int WeeklyHours )
+    {
+        super( first, last, SIN );
+        this.HourlyWageRate = HourlyWage;
+        this.NumberOfHours = WeeklyHours;
+    }
+    
+    public HourlyEmployee ( )
+    {
+        super( );
+        this.HourlyWageRate = 0.0f;
+        this.NumberOfHours = 0;
+    }
+   
+     public double calculatePay( ){
+         return (HourlyWageRate * NumberOfHours * 2);
+     }
+}
+
+
+

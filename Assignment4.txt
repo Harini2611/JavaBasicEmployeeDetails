@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week6;
+
+/**
+ *
+ * @author Harini.Raj
+ */
+public class Assignment4 {
+    public static void main(String[] args) {
+        HourlyEmployee obj = new HourlyEmployee ("Harini", "Raj", 1419700, 15.54f, 21);
+        SalariedEmployee obj1 = new SalariedEmployee ("Peter", "Dinsky", 1625617, 20000);
+        VolunteerEmployees obj2 = new VolunteerEmployees ( "Meowdy", "Rutherford", 1567823, "8761925361");
+        System.out.println("Employee ID: " + obj.getSIN());
+        System.out.println("Employee First Name: " + obj.getFirstName());
+        System.out.println("Employee Last Name: " + obj.getLastName());
+        System.out.println("Bi-Weekly Salary: " + obj.calculatePay());
+        
+        System.out.println("Employee ID: " + obj1.getSIN());
+        System.out.println("Employee First Name: " + obj1.getFirstName());
+        System.out.println("Employee Last Name: " + obj1.getLastName());
+        System.out.println("Bi-Weekly Salary: " + obj1.calculatePay());
+        
+        System.out.println("Employee ID: " + obj2.getSIN());
+        System.out.println("Employee First Name: " + obj2.getFirstName());
+        System.out.println("Employee Last Name: " + obj2.getLastName());
+        System.out.println("Bi-Weekly Salary: " + obj2.calculatePay());
+}
+}
